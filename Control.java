@@ -38,16 +38,16 @@ public class Control {
         if (price<100){
             return "Pas de remise";
         }else if(price>=100 && price<=500){
-             return "Le montant après remise est " +(price+price*0.1);
+             return "Le montant après remise est " +(price-price*0.1);
         }else{
-             return "Le montant après remise est " +(price+price*0.2);  
+             return "Le montant après remise est " +(price-price*0.2);  
         }
     }
     public static void main(String[] args){
         System.out.println(parite(2));
         System.out.println(sup(5,3,4));
         System.out.println(clasAge(15));
-        System.out.println(checkNote(15));
+        System.out.println(checkNote(50));
         System.out.println(remise(300));
     }
 }
