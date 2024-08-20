@@ -6,7 +6,11 @@
 
 public class MyArray {
     public static void main(String[] args) {
-        String[] alphabet; //Déclaration de la variable alphabet qui est un tableau de chaîne de caractère 
-        char[] alpha;
+        String[] alpha;
+        char[] alphabet = new char[26]; //Déclaration de la variable alphabet qui est un tableau de chaîne de caractère (26 caractères)
+        //Assignation d'une variable
+        int[] number = { 1, 2, 3, 5, 5 };//Initialisation d'un tableau de nombre 
+        byte[] byteTab = new byte[5]; //Initialisation d'un tableau de 5 byte;
+        System.out.println(number);
     }
 }
