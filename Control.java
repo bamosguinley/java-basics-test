@@ -51,7 +51,6 @@ public class Control {
         System.out.println(parite(2));
         System.out.println(sup(5,3,4));
         System.out.println(clasAge(15));
-        System.out.println(checkNote(50));
         System.out.println(remise(300));
     }
 }
