@@ -1,3 +1,5 @@
+import java.util.Scanner; 
+
 public class App {
     public static void main(String[] args){
         //exercice 1
@@ -44,5 +46,8 @@ public class App {
         float y=2;
         y= (int) y;
         // System.out.println(x>y);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the String");
+        String s = scanner.next();
 }
 }
