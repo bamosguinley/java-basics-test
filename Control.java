@@ -1,40 +1,44 @@
 public class Control {
-    public static String parite(int i){
-       return i%2==0?i+" est nombre pair":i+" est un nombre impair";
+
+    public static String parite(int i) {
+        return i % 2 == 0 ? i + " est nombre pair" : i + " est un nombre impair";
     }
-    public static String sup(int x,int y, int z){
-        if(x>y){
-            if(x>z){
-                return "Le plus grand nombre est "+x;
-            }else{
-              return "Le plus grand nombre est "+z;
+    
+    public static String sup(int x, int y, int z) {
+        if (x > y) {
+            if (x > z) {
+                return "Le plus grand nombre est " + x;
+            } else {
+                return "Le plus grand nombre est " + z;
             }
-        }
-        else if(y>z){
-            return "Le plus grand nombre est "+y;
-        }else{
-          return "Le plus grand nombre est "+z;
+        } else if (y > z) {
+            return "Le plus grand nombre est " + y;
+        } else {
+            return "Le plus grand nombre est " + z;
         }
     }
-    public static String clasAge(int age){
-        if(age<0){
+    
+    public static String clasAge(int age) {
+        if (age < 0) {
             return "invalide";
-        }else{
-            if(age<=12){
-              return "Enfant" ;
-            }else if(age>=13 && age<=19){
+        } else {
+            if (age <= 12) {
+                return "Enfant";
+            } else if (age >= 13 && age <= 19) {
                 return "Adolescent";
-            }else if(age>=20 && age<=64){
-              return "Adulte" ;
-            }else{
+            } else if (age >= 20 && age <= 64) {
+                return "Adulte";
+            } else {
                 return "Sénior";
             }
         }
     }
-    public static String checkNote(int note){
-        return (note>=50)?"Réussi":"Échoué";
-    }  
-    public static String remise(int price){
+    
+    public static String checkNote(int note) {
+        return (note>100)?"Invalide":(note >= 50) ? "Réussi" : "Échoué";
+    }
+    
+    public static String remise(double price){
         if (price<100){
             return "Pas de remise";
         }else if(price>=100 && price<=500){
