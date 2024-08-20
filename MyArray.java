@@ -11,6 +11,9 @@ public class MyArray {
         //Assignation d'une variable
         int[] number = { 1, 2, 3, 5, 5 };//Initialisation d'un tableau de nombre 
         byte[] byteTab = new byte[5]; //Initialisation d'un tableau de 5 byte;
-        System.out.println(number);
+        for (int i = 0; i < number.length; i++) {
+            System.out.println("L'élément à l'index " + i + " est " + number[i]);
+        }
+    
     }
 }
