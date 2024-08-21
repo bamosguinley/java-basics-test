@@ -3,7 +3,7 @@ public class Voiture {
     private String type;
     private String modele;
     private double prix;
-    protected String couleur;
+    private String couleur;
 
     public Voiture(String type, String modele, double prix, String couleur) {
         this.type = type;
