@@ -1,7 +1,7 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Set;
 
 public class ListArray {
     public static void sortArray(int[] table) {
@@ -26,12 +26,11 @@ public class ListArray {
         for (int i = 0; i < t.length; i++) {
             if (curentMax < t[i]) {
                 curentMax = t[i];
+                
             }
-            if (currentMin < t[i]) {
-                currentMin = currentMin;
-            } else {
+            if (currentMin > t[i]) {
                 currentMin = t[i];
-            }
+            } 
         }
         System.out.println(curentMax);
         System.out.println(currentMin);
@@ -41,15 +40,12 @@ public class ListArray {
         System.out.println(Arrays.binarySearch(t, number));
     }
 
-    public static void delDoublon(int [] t) {
-        HashSet<Integer> sansDouble = new HashSet<Integer>();
+    public static void delDoublon(int[] t) {
+        Set<Integer> sansDouble = new HashSet<>(11);
         for (Integer tel : t) {
             sansDouble.add(tel);
         }
-        for (Integer tel : sansDouble) {
-            System.out.println(tel);
-        }
-        
+        System.out.println(sansDouble);
     }
 
 
@@ -62,7 +58,7 @@ public class ListArray {
         number.add(4);
         number.add(7);
 
-        int[] table = { 8, 6, 2,2,2,2,2,2, 85, 3, 8, 36, 85, 6, 3 };
+        int[] table = { 8, 6, 2,2,2,2,2,2, 85, 3, 8, 36, 85, 6, 3,4,892 };
         // sortArray(table);
         // filtreTable(table);
         // maximumMin(table);
